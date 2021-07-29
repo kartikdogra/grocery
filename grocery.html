@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>GROCERY LIST</title>
+</head>
+<body>
+      <div class="container">
+        <div class="grocery">
+          <h4 style="text-align: center;">Grocery Shopping <i class="fas fa-shopping-basket"></i></h4>
+          <h5>Add Item</h5>
+          <form class="form" id="formadd">
+            Item name <input type="text" class="form-item"  mr-2 id="item-name">
+
+            units <input type="text" class="form-item" mr-2 id="item-unit">
+            Price <input type="text" class="form-item" mr-2 id="item-total">
+           <input type="submit" class="btn btn-dark" value="submit">
+                    </form>
+<table style="width: 100%;" id="item">
+<tr>
+<th> Item</th>
+<th>Unit</th>
+<th>Total</th>
+<th> Edit</th>
+</tr>
+
+</table>
+<table style="width: 100%;" id="item">
+  <tr>
+
+  <th style="margin-left: 30%;"> Total units
+    <input class="form-item1" name="tot_amount" id="tot_unit" type="text" readonly style="color: black;"></th>
+  <th >Total Price <input class="form-item1" name="tot_amount" id="tot_amount" type="text" readonly></th>
+
+  </tr>
+  
+  </table>
+</div>
+</div>
+  <script src="https://kit.fontawesome.com/a6f1ed60fd.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
